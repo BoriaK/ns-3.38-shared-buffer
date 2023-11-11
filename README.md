@@ -126,3 +126,17 @@ However, we recommend to follow the Gitlab guidelines for starters,
 that includes creating a Gitlab account, forking the ns-3-dev project
 under the new account's name, and then cloning the forked repository.
 You can find more information in the [manual](https://www.nsnam.org/docs/manual/html/working-with-git.html).
+
+# ns-3.38-shared-buffer
+this version is an Addon on top of the ns-3.38.
+in order to get it, first download the official ns-3.38 version.
+in "Edit CMake Cache": NS3_WARNINGS_AS_ERRORS -> off
+"Clean Rebuild All Projects"
+delete the following files and folders from the project: 
+* CMakeLists.txt
+* README.md
+* VERSION
+* scratch/
+* src/
+then perform git pull from the repository.
+clean re-build (CMake)
